@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Naren Periyasamy R K — Banking Ops, KYC/AML &amp; Accounts</title>
+<meta name="description" content="Portfolio of Naren Periyasamy R K, B.Com graduate in banking operations, KYC/AML, audit support and financial documentation.">
+<style>
+:root{
+  --bg:#fff8f6;--surface:#ffffff;--ink:#2a0a0f;--muted:#6b4046;--scarlet:#c8102e;--scarlet-hi:#ff2400;--on-scarlet:#ffffff;--line:#f0cfd0;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14040a;--surface:#220a11;--ink:#ffeceb;--muted:#d9a9ac;--scarlet:#ff3b30;--scarlet-hi:#ff2400;--on-scarlet:#14040a;--line:#4a1a22;}}
+:root[data-theme="dark"]{--bg:#14040a;--surface:#220a11;--ink:#ffeceb;--muted:#d9a9ac;--scarlet:#ff3b30;--scarlet-hi:#ff2400;--on-scarlet:#14040a;--line:#4a1a22;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 "Times New Roman",Times,serif;font-variant-numeric:lining-nums;overflow-x:hidden}
+h1,h2,h3,.sans,nav,.btn,.tag{font-family:"Times New Roman",Times,serif}
+a{color:var(--scarlet)}
+:focus-visible{outline:3px solid var(--scarlet-hi);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--scarlet);color:var(--on-scarlet);padding:10px 16px;z-index:300;border-radius:6px}
+.skip:focus{left:8px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:100;background:var(--bg);border-bottom:2px solid var(--scarlet);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;padding:12px 5vw}
+.logo{font-weight:800;font-size:18px;color:var(--ink);text-decoration:none;letter-spacing:.5px}
+.logo b{color:var(--scarlet)}
+nav ul{display:flex;flex-wrap:wrap;gap:4px 18px;list-style:none}
+nav a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:600;padding:6px 2px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--scarlet)}
+#trail{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:250}
+#ring,#dot{position:fixed;left:0;top:0;pointer-events:none;z-index:260;opacity:0;will-change:transform;transition:opacity .25s}
+#dot{width:5px;height:5px;margin:-2.5px 0 0 -2.5px;border-radius:50%;background:var(--scarlet-hi);box-shadow:0 0 0 1.5px #fff}
+#ring{width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1.5px var(--scarlet-hi)}
+html.fx,html.fx *{cursor:none!important}
+html.fx.on #ring,html.fx.on #dot{opacity:1}
+#bar{position:fixed;top:0;left:0;height:4px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff2400,#ff8a5c);z-index:400}
+.stamp{position:absolute;right:22px;bottom:16px;transform:rotate(-12deg) scale(1.7);opacity:0;border:3px solid var(--scarlet);color:var(--scarlet);font:900 18px "Times New Roman",Times,serif;padding:4px 14px;border-radius:6px;letter-spacing:2px;text-transform:uppercase;transition:opacity .4s .6s,transform .4s .6s}
+.ledger.in .stamp{opacity:.9;transform:rotate(-12deg) scale(1)}
+.snap{font:700 16px "Times New Roman",Times,serif;margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.snap span{border:2px solid #fff;border-radius:8px;padding:4px 12px}
+.file{text-align:left;font:16px/1.6 "Times New Roman",Times,serif;color:var(--ink);background:var(--surface);border:2px dashed var(--scarlet);border-radius:12px;padding:20px;cursor:pointer;transition:transform .2s}
+.file:hover{transform:translateY(-4px)}
+.file.ok{background:var(--scarlet);color:var(--on-scarlet);border-style:solid}
+.file.no{opacity:.65}
+.file em{font:800 14px "Times New Roman",Times,serif;letter-spacing:1px;text-transform:uppercase}
+.hero{background:linear-gradient(135deg,#8f0a1f 0%,#c8102e 45%,#ff2400 100%);color:#fff;padding:90px 5vw 70px;position:relative;overflow:hidden}
+.hero::before{content:"₹";position:absolute;right:-2vw;top:-6vw;font:900 36vw/1 "Times New Roman",Times,serif;color:rgba(255,255,255,.08);pointer-events:none}
+.hero .in{max-width:1100px;margin:0 auto;position:relative}
+.tag{display:inline-block;border:2px solid #fff;border-radius:999px;padding:4px 16px;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,8vw,92px);line-height:1.02;font-weight:900;margin:22px 0 14px;letter-spacing:-1.5px}
+.hero p.lead{max-width:640px;font-size:19px}
+.role{font:700 clamp(18px,3vw,26px) "Times New Roman",Times,serif;margin-top:18px;min-height:1.5em}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:16px;padding:14px 26px;border-radius:10px;border:2px solid #fff;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.solid{background:#fff;color:#a30c24}
+.btn.line{background:transparent;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1100px;margin:-40px auto 0;padding:0 5vw;position:relative}
+.stat{background:var(--surface);border:2px solid var(--scarlet);border-radius:14px;padding:18px;text-align:center}
+.stat b{display:block;font:900 32px "Times New Roman",Times,serif;color:var(--scarlet)}
+.stat span{color:var(--muted);font-size:14px}
+section{max-width:1100px;margin:0 auto;padding:80px 5vw 10px}
+h2{font-size:clamp(28px,4.5vw,42px);font-weight:800;margin-bottom:8px}
+h2::after{content:"";display:block;width:70px;height:6px;background:var(--scarlet);border-radius:3px;margin-top:10px}
+.sub{color:var(--muted);margin:14px 0 30px;max-width:640px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--scarlet);border-radius:12px;padding:22px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card .meta{color:var(--muted);font-size:15px}
+.ledger{position:relative;background:var(--surface);border:2px solid var(--scarlet);border-radius:14px;overflow:hidden}
+.ledger .head{background:var(--scarlet);color:var(--on-scarlet);padding:16px 22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;font-family:"Times New Roman",Times,serif}
+.ledger ul{list-style:none;padding-bottom:54px}
+.ledger li{padding:14px 22px 14px 56px;border-top:1px dashed var(--line);position:relative}
+.ledger li::before{content:"Cr";position:absolute;left:16px;top:14px;font:800 13px "Times New Roman",Times,serif;color:var(--scarlet);border:1.5px solid var(--scarlet);border-radius:4px;padding:0 5px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chips span{background:var(--scarlet);color:var(--on-scarlet);font:600 14px "Times New Roman",Times,serif;padding:6px 14px;border-radius:999px}
+.marquee{overflow:hidden;background:var(--scarlet);color:var(--on-scarlet);margin-top:70px;padding:14px 0;font:800 18px "Times New Roman",Times,serif;white-space:nowrap}
+.marquee div{display:inline-block;animation:m 28s linear infinite}
+@keyframes m{to{transform:translateX(-50%)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+.resume-box{background:linear-gradient(135deg,#8f0a1f,#ff2400);color:#fff;border-radius:18px;padding:34px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.resume-box h3{font-size:26px}
+footer{text-align:center;padding:50px 5vw 40px;color:var(--muted);font-family:"Times New Roman",Times,serif;font-size:15px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div id="bar" aria-hidden="true"></div><canvas id="trail" aria-hidden="true"></canvas><div id="ring" aria-hidden="true"></div><div id="dot" aria-hidden="true"></div>
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Naren, back to top">NAREN PERIYASAMY<b>.</b>RK</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="in">
+    <span class="tag">Open to work · Chennai</span>
+    <h1>Naren Periyasamy R&nbsp;K</h1>
+    <div class="role" aria-live="off"><span id="typed">Banking Operations</span><span aria-hidden="true">|</span></div>
+    <p class="lead">I'm a B.Com (Computer Applications) graduate who has spent time on the audit side of a CA firm, knows his way around KYC &amp; AML, and tends to spot the small details others miss. Give me messy financial records and I'll turn them into clean, accurate documentation.</p>
+    <div class="snap" aria-label="Recruiter snapshot"><span>Open to: Banking Ops · KYC/AML · Accounts · Fraud Ops · Operations</span><span>Also open to any role that fits my skills, profile &amp; education</span><span>Rotational shifts: OK</span><span>Based in Chennai</span></div>
+    <div class="btns">
+      <a class="btn solid" href="https://drive.google.com/uc?export=download&amp;id=1H4Flhbhpcdv8kHiHB_t5XfVfvGLRBa-s" target="_blank" rel="noopener">⬇ Download Resume</a>
+      <a class="btn line" href="https://drive.google.com/file/d/1H4Flhbhpcdv8kHiHB_t5XfVfvGLRBa-s/view?usp=drive_link" target="_blank" rel="noopener">👁 View Resume</a>
+      <a class="btn line" href="#contact">Hire Me</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats" role="list">
+  <div class="stat" role="listitem">
+    <b data-n="5" data-s=" mo">5 MO</b>
+    <span>Internship experience</span>
+  </div>
+
+  <div class="stat" role="listitem">
+    <b data-n="81" data-s="%">81%</b>
+    <span>Class XII score</span>
+  </div>
+
+  <div class="stat" role="listitem">
+    <b>SQL</b>
+    <span>HackerRank certified</span>
+  </div>
+
+  <div class="stat" role="listitem">
+    <b>Tally</b>
+    <span>Prime &amp; ERP</span>
+  </div>
+</div>
+
+<section id="about">
+  <h2 class="reveal">About</h2>
+
+  <p class="sub reveal">
+    I’m a B.Com Computer Applications graduate who’s drawn to finance,
+    banking, business operations and technology. My internship and my studies
+    have given me hands-on experience with accounting, documentation and
+    working with data. I like learning new things, working alongside people,
+    and taking on responsibilities that help me grow.
+  </p>
+
+  <div class="grid">
+
+    <article class="card reveal">
+      <h3>Education</h3>
+      <p>
+        <strong>B.Com (Computer Applications)</strong><br>
+        Ramakrishna Mission Vivekananda College,
+        University of Madras
+      </p>
+      <p class="meta">2023–2026 · CGPA 6.5</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Higher Secondary</h3>
+      <p>
+        <strong>Good Shepherd Higher Secondary School</strong>,
+        Chennai
+      </p>
+      <p class="meta">2022–2023 · 81%</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Beyond the Classroom</h3>
+      <p>
+        Through NSS, I’ve got to take part in community activities.
+        I’ve also represented the Junior State Football Team, which
+        taught me a lot about teamwork, discipline and backing up the
+        people around you.
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <h3>Languages</h3>
+      <p>
+        Tamil (Native)<br>
+        English (Fluent)
+      </p>
+    </article>
+
+  </div>
+</section>
+<section id="experience">
+  <h2 class="reveal">Experience</h2>
+  <p class="sub reveal">Every entry balanced and reconciled.</p>
+  <div class="ledger reveal">
+    <div class="head"><strong>Assistant Accountant Intern · KCMS &amp; Associates, Chartered Accountants</strong><span>Chennai · Jun 2026 – Oct 2026</span></div>
+    <ul>
+      <li>Helped senior auditors go through accounting records, vouchers, invoices and supporting documents.</li>
+      <li>Kept financial records up to date in Tally Prime and Excel, accurately and on time.</li>
+      <li>Did bank reconciliations and checked ledger entries to track down and resolve discrepancies.</li>
+      <li>Helped with financial statements, audit working papers and statutory compliance documentation.</li>
+      <li>Organised and digitised accounting records so they were easier to find and use.</li>
+      <li>Worked closely with the audit team, taking care to stay accurate and keep things confidential.</li>
+    </ul>
+    <div class="stamp" aria-hidden="true">Reconciled ✓</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="reveal">Skills</h2>
+  <div class="grid" style="margin-top:26px">
+    <article class="card reveal"><h3>Accounting &amp; Finance Tools</h3><div class="chips"><span>Tally Prime/ERP</span><span>MS Excel</span><span>VLOOKUP</span><span>Pivot Tables</span><span>MS Office</span></div></article>
+    <article class="card reveal"><h3>Technical</h3><div class="chips"><span>MySQL</span><span>Python (Basic)</span><span>Web Dev (Basic)</span><span>Data Entry</span></div></article>
+    <article class="card reveal"><h3>Domain Knowledge</h3><div class="chips"><span>KYC / AML</span><span>Banking Operations</span><span>Reconciliation</span><span>Audit Support</span><span>Compliance Reporting</span></div></article>
+    <article class="card reveal"><h3>Core Strengths</h3><div class="chips"><span>Analytical Thinking</span><span>Attention to Detail</span><span>Problem Solving</span><span>Time Management</span></div></article>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="reveal">Projects</h2>
+  <div class="grid" style="margin-top:26px">
+    <article class="card reveal"><h3>Bank Account Management System</h3><p class="meta">MySQL</p><p>A database for customer accounts, balances and transactions. I used joins, aggregate functions and filters to build account reports, and wrote queries to add, update, delete and retrieve records.</p></article>
+    <article class="card reveal"><h3>Student Performance Dashboard</h3><p class="meta">Microsoft Excel</p><p>A dashboard that looks at marks, attendance and overall performance, built with Pivot Tables, charts, IF functions and conditional formatting.</p></article>
+    <article class="card reveal"><h3>SQL Certification</h3><p class="meta">HackerRank</p><p><a href="https://www.hackerrank.com/certificates/e9402244bd60" target="_blank" rel="noopener">View credential (opens in new tab)</a></p></article>
+  </div>
+</section>
+
+<section id="approach">
+  <h2 class="reveal">My Approach to Work</h2>
+
+  <p class="sub reveal">
+    For me, good work comes down to communicating clearly, never
+    stopping learning, solving problems properly and owning what I’m given.
+  </p>
+
+  <div class="grid">
+
+    <article class="card reveal">
+      <h3>01. Understand & Learn</h3>
+      <p>
+        I take the time to understand a task, the process behind it and
+        what’s expected of me. I’m always happy to pick up new tools,
+        systems and technologies if they help me do better work.
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <h3>02. Analyse & Solve</h3>
+      <p>
+        I work through challenges logically, look closely at the
+        information I have, and aim for practical solutions instead of
+        guessing.
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <h3>03. Communicate & Collaborate</h3>
+      <p>
+        I care about clear communication, listening properly and working
+        as a team. Sharing ideas and hearing other points of view usually
+        leads to better results.
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <h3>04. Take Responsibility</h3>
+      <p>
+        I own the responsibilities I’m given, manage my time well and
+        stay consistent in getting tasks done.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="ledger reveal" style="margin-top:28px">
+    <div class="head">
+      <strong>My Professional Goal</strong>
+      <span>Learn · Contribute · Grow</span>
+    </div>
+
+    <ul>
+      <li>Put what I’ve learned in college and on the job to work in a professional setting.</li>
+      <li>Grow my technical, analytical and communication skills through real work.</li>
+      <li>Add real value to my team’s goals and the organisation’s.</li>
+      <li>Build a long-term career by always learning and developing.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div>KYC ★ AML ★ TALLY PRIME ★ SQL ★ RECONCILIATION ★ AUDIT SUPPORT ★ EXCEL ★ BANKING OPS ★ KYC ★ AML ★ TALLY PRIME ★ SQL ★ RECONCILIATION ★ AUDIT SUPPORT ★ EXCEL ★ BANKING OPS ★&nbsp;</div></div>
+
+<section id="resume">
+  <div class="resume-box reveal">
+    <div><h3>Want the full picture?</h3><p>Download my resume or read it online.</p></div>
+    <div class="btns" style="margin:0">
+      <a class="btn solid" href="https://drive.google.com/uc?export=download&amp;id=1H4Flhbhpcdv8kHiHB_t5XfVfvGLRBa-s" target="_blank" rel="noopener">⬇ Download</a>
+      <a class="btn line" href="https://drive.google.com/file/d/1H4Flhbhpcdv8kHiHB_t5XfVfvGLRBa-s/view?usp=drive_link" target="_blank" rel="noopener">👁 View online</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="reveal">Get in Touch</h2>
+
+  <p class="sub reveal">
+    I’m always happy to connect with new people, hear about opportunities
+    and learn from new experiences. If you have a role that fits my skills,
+    profile and education, I’d love to hear from you.
+  </p>
+
+  <div class="grid">
+
+    <article class="card reveal">
+      <h3>Email</h3>
+      <p class="meta">Happy to hear about opportunities or any professional enquiries.</p>
+      <a href="mailto:rknaren1785@gmail.com">
+        rknaren1785@gmail.com
+      </a>
+    </article>
+
+    <article class="card reveal">
+      <h3>Phone</h3>
+      <p class="meta">Happy to talk over a call.</p>
+      <a href="tel:+919361879906">
+        +91 93618 79906
+      </a>
+    </article>
+
+    <article class="card reveal">
+      <h3>LinkedIn</h3>
+      <p class="meta">Let’s connect on LinkedIn.</p>
+      <a href="https://linkedin.com/in/narenrk"
+         target="_blank" rel="noopener">
+        View LinkedIn Profile ↗
+      </a>
+    </article>
+
+    <article class="card reveal">
+      <h3>Location</h3>
+      <p>Chennai, Tamil Nadu, India</p>
+      <p class="meta">Open to roles that match my skills, profile and education.</p>
+    </article>
+
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Naren Periyasamy R K · Built in scarlet</footer>
+
+<script>
+(function(){
+  /* Custom cursor: rAF loop synced to the display (60/120/144 Hz), delta-time easing, GPU transforms, coalesced pointer events */
+  (function(){
+    if(!matchMedia('(hover:hover) and (pointer:fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var html=document.documentElement,ring=document.getElementById('ring'),dot=document.getElementById('dot'),cv=document.getElementById('trail');
+    var ctx=cv.getContext('2d',{desynchronized:true}),dpr=Math.min(window.devicePixelRatio||1,2),W=0,H=0;
+    html.classList.add('fx');
+    function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+    size();addEventListener('resize',size,{passive:true});
+    var mx=-100,my=-100,rx=-100,ry=-100,rs=1,ts=1,ps=[],last=performance.now(),cols=['#ff2400','#c8102e','#ff5a3c'];
+    function spawn(x,y,burst){
+      if(ps.length>180)return;
+      var a=Math.random()*6.283,s=burst?60+Math.random()*180:10+Math.random()*30;
+      ps.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,r:burst?2+Math.random()*2:1+Math.random()*1.6,life:1,c:cols[(Math.random()*3)|0]});
+    }
+    addEventListener('pointermove',function(e){
+      if(e.pointerType==='touch')return;
+      var evs=e.getCoalescedEvents?e.getCoalescedEvents():[e];
+      for(var i=0;i<evs.length;i++){spawn(evs[i].clientX,evs[i].clientY,false)}
+      mx=e.clientX;my=e.clientY;html.classList.add('on');
+    },{passive:true});
+    addEventListener('pointerdown',function(e){for(var i=0;i<16;i++)spawn(e.clientX,e.clientY,true);ts=.7},{passive:true});
+    addEventListener('pointerup',function(){ts=1},{passive:true});
+    document.addEventListener('pointerover',function(e){
+      var t=e.target.closest&&e.target.closest('a,button,.card,.stat');
+      ts=t?(t.matches('a,button')?1.7:1.2):1;
+    },{passive:true});
+    document.addEventListener('pointerleave',function(){html.classList.remove('on')});
+    function frame(t){
+      var dt=Math.min((t-last)/1000,.05);last=t;
+      var k=1-Math.pow(.0004,dt),ks=1-Math.pow(.002,dt);
+      rx+=(mx-rx)*k;ry+=(my-ry)*k;rs+=(ts-rs)*ks;
+      dot.style.transform='translate3d('+mx+'px,'+my+'px,0)';
+      ring.style.transform='translate3d('+rx+'px,'+ry+'px,0) scale('+rs.toFixed(3)+')';
+      ctx.clearRect(0,0,W,H);
+      for(var i=ps.length-1;i>=0;i--){
+        var p=ps[i];p.life-=dt*1.9;
+        if(p.life<=0){ps.splice(i,1);continue}
+        p.x+=p.vx*dt;p.y+=p.vy*dt;
+        ctx.globalAlpha=p.life*.85;ctx.fillStyle=p.c;
+        ctx.beginPath();ctx.arc(p.x,p.y,p.r*p.life,0,6.283);ctx.fill();
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  })();
+  var bar=document.getElementById('bar'),tick=false;
+  function prog(){tick=false;var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(scrollY/h,1):0)+')'}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(prog)}},{passive:true});
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.stat b[data-n]').forEach(function(b){
+    if(still||!('IntersectionObserver' in window))return;
+    var n=+b.dataset.n,s=b.dataset.s||'',o=new IntersectionObserver(function(es){
+      if(!es[0].isIntersecting)return;o.disconnect();var t0=performance.now();
+      (function step(t){var p=Math.min((t-t0)/1200,1);b.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(step)})(t0);
+    });o.observe(b);
+  });
+  var fb=document.getElementById('fb');
+  document.querySelectorAll('.file').forEach(function(b){b.addEventListener('click',function(){
+    var ok=b.dataset.ok==='1';b.classList.add(ok?'ok':'no');
+    if(!b.querySelector('em'))b.insertAdjacentHTML('beforeend','<br><em>'+(ok?'Escalated ✓':'Looks clean')+'</em>');
+    fb.textContent=ok?'Correct. A name mismatch plus cash deposits kept just under the reporting limit is a classic pattern to escalate for review.':'Not quite. This file looks consistent. Look for mismatched details and unusual patterns.';
+  })});
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var roles=['Banking Operations','KYC / AML Analyst','Accounts Assistant','Fraud Ops Aspirant','Financial Documentation'],ri=0,ci=0,del=false,el=document.getElementById('typed');
+    (function loop(){
+      var c=roles[ri];
+      if(!del){ci++;el.textContent=c.slice(0,ci);if(ci===c.length){del=true;return setTimeout(loop,1400)}}
+      else{ci--;el.textContent=c.slice(0,ci);if(ci===0){del=false;ri=(ri+1)%roles.length}}
+      setTimeout(loop,del?35:75);
+    })();
+  }
+})();
+</script>
+</body>
+</html>
